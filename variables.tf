@@ -4,8 +4,13 @@ variable "nginx_container_name" {
   default     = "nginx"
 }
 
+variable "nginx_container_name2" {
+  type        = string
+  description = "name of the container"
+  default     = "nginx_latest"
+}
 variable "nginx_exposed_port" {
   type        = number
   description = "exposed port of the nginx container"
-  default     = 30100
+  default     = 30104
 }
